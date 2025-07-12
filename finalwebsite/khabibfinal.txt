@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Edited from "Dimension" template by HTML5 UP
+	Original: https://html5up.net/dimension
+-->
+<html>
+	<head>
+		<title>Khabib Tribute | UFC Legend</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			// Welcoming message (shown only on top page)
+			window.addEventListener("DOMContentLoaded", () => {
+				document.getElementById("welcome-msg").innerText = "Welcome to the Khabib Nurmagomedov Tribute Site!";
+			});
+
+			// Custom JS Function: Greet user
+			function greetFan() {
+				const name = document.getElementById("fanName").value;
+				const greet = name ? `Hello, ${name}! 🦅 Stay strong like Khabib!` : "Please enter your name!";
+				document.getElementById("greetingResult").innerText = greet;
+			}
+		</script>
+		<style>
+			/* Custom CSS Edit */
+			#fan-greeting {
+				background-color: #222;
+				color: #fff;
+				padding: 1rem;
+				margin: 2rem 0;
+				border-radius: 10px;
+				text-align: center;
+			}
+			#welcome-msg {
+				font-size: 1.5rem;
+				color: gold;
+				text-align: center;
+				margin-top: 1rem;
+			}
+			/* Background overlay image */
+			#bg {
+				background-image: url('images/khabib-bg.jpg');
+				background-size: cover;
+				background-position: center;
+				filter: brightness(0.5);
+				z-index: -1;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+			<header id="header">
+				<div class="logo">
+					<span class="icon fa-fist-raised"></span>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<h1>Khabib Nurmagomedov</h1>
+						<p>The Eagle | Undefeated UFC Lightweight Champion (29-0)</p>
+						<p id="welcome-msg"></p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#work">Career</a></li>
+						<li><a href="#about">Legacy</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div id="main">
+
+				<article id="intro">
+					<h2 class="major">Intro</h2>
+					<span class="image main"><img src="images/khabib-intro.jpg" alt="Khabib" /></span>
+					<p>Khabib Abdulmanapovich Nurmagomedov is a retired professional MMA fighter from Dagestan, Russia. Known for his unparalleled grappling and discipline, he retired undefeated with a record of 29-0 in the UFC Lightweight division.</p>
+					<div id="fan-greeting">
+						<h3>Are you a Khabib fan?</h3>
+						<input type="text" id="fanName" placeholder="Enter your name">
+						<button onclick="greetFan()">Greet Me</button>
+						<p id="greetingResult"></p>
+					</div>
+					<p>Original Template: <a href="https://html5up.net/dimension" target="_blank">HTML5 UP Dimension</a></p>
+				</article>
+
+				<article id="work">
+					<h2 class="major">Career</h2>
+					<span class="image main"><img src="images/khabib-fight.jpg" alt="Khabib UFC fight" /></span>
+					<p>Khabib's most famous victories include wins over Conor McGregor, Dustin Poirier, and Justin Gaethje. His wrestling dominance, stamina, and humble character made him a global icon in combat sports.</p>
+				</article>
+
+				<article id="about">
+					<h2 class="major">Legacy</h2>
+					<span class="image main"><img src="images/khabib-legacy.jpg" alt="Khabib legacy" /></span>
+					<p>After retiring in 2020, Khabib became a coach and entrepreneur. He continues to inspire millions around the world with his values of faith, discipline, and respect.</p>
+				</article>
+
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<p>Want to share how Khabib inspired you? Fill out the form below!</p>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</article>
+
+			</div>
+
+			<footer id="footer">
+				<p class="copyright">Student ID: 12345678 | Name: Your Name &copy; 2025</p>
+			</footer>
+
+		</div>
+
+		<div id="bg"></div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
